@@ -29,6 +29,7 @@ pip install ldap3
 ##  🛠 Options
 
 ### Arguments
+```bash
 - -d DC ......... Domain Controller IP or FQDN
 - -u USER ....... Bind user (UPN recommended)
 - -p PASS ....... Password (prompted if omitted)
@@ -37,17 +38,20 @@ pip install ldap3
 - -s ............ Use LDAPS (636 by default if no -P)
 - -t TIMEOUT .... Timeout in seconds (default: 10)
 - -f FILTER ..... LDAP filter (default: (objectClass=computer))
-
+```
 ### Constraints Checks
+```bash
 - --check-unconstrained . Check Unconstrained Delegation (UCD)
 - --check-constrained ... Check Constrained Delegation (KCD)
 - --check-rbcd .......... Check Resource-Based Constrained Delegation (RBCD)
 - -a |--all ............. Run all checks (UCD + KCD + RBCD)
-
+```
 ### Output
+```bash
 - --json ..... JSON output
 - --verbose .. Verbose mode (show attributes and details)
 - --no-color . Disable colors in console output
+```
 ---
 ## 👨‍💻 Research
 - Unconstrained Delegation abuse (MITRE ATT&CK T1558.003)
