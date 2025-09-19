@@ -11,9 +11,7 @@ It helps red/blue teams quickly identify delegation configurations that can be a
 - Detect **Constrained Delegation (KCD)** via `msDS-AllowedToDelegateTo` (+ optional S4U/Protocol Transition).
 - Detect **Resource-Based Constrained Delegation (RBCD)** via `msDS-AllowedToActOnBehalfOfOtherIdentity`.
 - Parses RBCD Security Descriptors and resolves **SIDs to human-readable accounts**.
-- Colorized output (red = vulnerable) or JSON mode for automation.
 - Works against any LDAP endpoint (389/636).
-- Short flags for connection, long flags for checks.
 
 ---
 
@@ -24,3 +22,14 @@ It helps red/blue teams quickly identify delegation configurations that can be a
 git clone https://github.com/youruser/findAD.git
 cd findAD
 pip install ldap3
+
+```
+##  Arguments
+-d DC           Domain Controller IP or FQDN
+-u USER         Bind user (UPN recommended)
+-p PASS         Password (prompted if omitted)
+-b BASE_DN      Base DN (if omitted, defaultNamingContext is queried)
+-P PORT         LDAP port (default 389 or 636 if -s)
+-s              Use LDAPS (636 by default if no -P)
+-t TIMEOUT      Timeout in seconds (default: 10)
+-f FILTER       LDAP filter (default: (objectClass=computer))
