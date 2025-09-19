@@ -26,7 +26,7 @@ pip install ldap3
 ```
 ---
 
-##  Options
+##  🛠 Options
 
 ### Arguments
 - -d DC ......... Domain Controller IP or FQDN
@@ -49,7 +49,7 @@ pip install ldap3
 - --verbose .. Verbose mode (show attributes and details)
 - --no-color . Disable colors in console output
 ---
-## Research
+## 👨‍💻 Research
 - Unconstrained Delegation abuse (MITRE ATT&CK T1558.003)
 - Dirk-jan Mollema — RBCD writeups and examples
 - [Practical KCD/RBCD resources — AD security blogs and research]
