@@ -25,11 +25,11 @@ pip install ldap3
 
 ```
 ##  Arguments
--d DC           Domain Controller IP or FQDN
--u USER         Bind user (UPN recommended)
--p PASS         Password (prompted if omitted)
--b BASE_DN      Base DN (if omitted, defaultNamingContext is queried)
--P PORT         LDAP port (default 389 or 636 if -s)
--s              Use LDAPS (636 by default if no -P)
--t TIMEOUT      Timeout in seconds (default: 10)
--f FILTER       LDAP filter (default: (objectClass=computer))
+- -d DC           Domain Controller IP or FQDN
+- -u USER         Bind user (UPN recommended)
+- -p PASS         Password (prompted if omitted)
+- -b BASE_DN      Base DN (if omitted, defaultNamingContext is queried)
+- -P PORT         LDAP port (default 389 or 636 if -s)
+- -s              Use LDAPS (636 by default if no -P)
+- -t TIMEOUT      Timeout in seconds (default: 10)
+- -f FILTER       LDAP filter (default: (objectClass=computer))
